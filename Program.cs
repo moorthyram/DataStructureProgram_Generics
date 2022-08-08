@@ -21,8 +21,11 @@ namespace DataStructureProgram_Generics
                                         linkedList.AddFirst(70);*/
                     linkedList.Append(56);
                     linkedList.Append(30);
-                    linkedList.Append(70);
+                    //linkedList.Append(70);
+                    //linkedList.Display();
+                    linkedList.Insert(70,71);
                     linkedList.Display();
+
                     break;
             }
             Console.ReadLine();

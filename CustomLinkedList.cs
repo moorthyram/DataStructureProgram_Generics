@@ -39,9 +39,32 @@ namespace DataStructureProgram_Generics
         {
             AddLast(data);
         }
+        public Node Insert(int data, int value)
+        {
+
+            Node node = new Node(data);
+            if (value == 1)
+            {
+                node.next = head;
+                head = node;
+            }
+            else
+            {
+                while (value != 0)
+                {
+                    if (value == 1)
+                    {
+                        node.next = head.next;
+                        head.next = node;
+                    }
+                    //head = head.next;
+                }
+            }
+            return head;
+        }
         public void Display()
             {
-                Console.WriteLine("\nDisplaying Nodes\n");
+                Console.WriteLine("\nDisplaying Nodes Data\n");
                 Node temp = this.head;
                 if (temp == null)
                 {
