@@ -35,6 +35,10 @@ namespace DataStructureProgram_Generics
             head = node;
             Console.WriteLine("{0} added into linked list", node.data);
         }
+        public void Append(int data)
+        {
+            AddLast(data);
+        }
         public void Display()
             {
                 Console.WriteLine("\nDisplaying Nodes\n");
