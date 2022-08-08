@@ -13,9 +13,9 @@ namespace DataStructureProgram_Generics
             {
                 case 1:
                     CustomLinkedList linkedList = new CustomLinkedList();
-                    linkedList.Add(56);
-                    linkedList.Add(30);
-                    linkedList.Add(70);
+                    linkedList.AddLast(56);
+                    linkedList.AddLast(30);
+                    linkedList.AddLast(70);
                     linkedList.Display();
                     break;
             }
