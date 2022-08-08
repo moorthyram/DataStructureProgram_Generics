@@ -10,7 +10,7 @@ namespace DataStructureProgram_Generics
     {
 
             public Node head;
-            public void Add(int data)
+            public void AddLast(int data)
             {
                 Node node = new Node(data);
                 if (head == null)
@@ -28,7 +28,14 @@ namespace DataStructureProgram_Generics
                 }
                 Console.WriteLine("{0} added into linked list", node.data);
             }
-            public void Display()
+        public void AddFirst(int data)
+        {
+            Node node = new Node(data);
+            node.next = head;
+            head = node;
+            Console.WriteLine("{0} added into linked list", node.data);
+        }
+        public void Display()
             {
                 Console.WriteLine("\nDisplaying Nodes\n");
                 Node temp = this.head;
