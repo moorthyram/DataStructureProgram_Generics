@@ -10,7 +10,7 @@ namespace DataStructureProgram_Generics
     {
 
             public Node head;
-            public void Add(int data)
+            public void Addlast(int data)
             {
                 Node node = new Node(data);
                 if (head == null)
